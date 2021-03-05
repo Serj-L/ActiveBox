@@ -31,7 +31,6 @@ body {
   text-align: center;
   border-radius: 2px;
 }
-
 /* /common */
 
 /* header */
@@ -149,7 +148,7 @@ body {
   outline-offset: 10px;
   transform: scale(0);
   transform-origin: center;
-  transition: 0.35s ease-in-out;
+  transition: 0.2s ease-in-out;
   z-index: -1;
 }
 
@@ -158,7 +157,6 @@ body {
   transform: scale(1);
   transform-origin: center;
 }
-
 /* /header */
 
 /* features */
@@ -213,42 +211,39 @@ body {
 }
 /* /features */
 
-/* projects */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
+/* works */
+.works {
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.projects__sample {
-  display: block;
+.works__sample {
+  display: flex;
   position: relative;
-  max-width: 470px;
-  transition: 0.2s;
 }
 
-.projects__sample img {
+.works__sample img {
   display: block;
   width: 100%;
 }
 
-.projects__sample span {
+.works__sample span {
   display: none;
   position: absolute;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #ffffff;
-  transition: 0.2s;
 }
 
-.projects__title {
+.works__title {
   font-weight: 700;
   text-transform: uppercase;
   top: 43%;
   left: 50%;
   transform: translateX(-50%);
 }
-.projects__text {
+.works__text {
   font-weight: 400;
   text-transform: capitalize;
   top: 50%;
@@ -256,12 +251,12 @@ body {
   transform: translateX(-50%);
 }
 
-.projects__sample:hover > span {
+.works__sample:hover > span {
   display: block;
   z-index: 1;
 }
 
-.projects__sample:hover::after {
+.works__sample:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -270,5 +265,4 @@ body {
   left: 0;
   background-color: rgba(232, 69, 69, 0.9);
 }
-
-/* /projects */
+/* /works */
