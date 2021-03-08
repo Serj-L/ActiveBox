@@ -562,7 +562,7 @@ body {
   margin-bottom: 15px;
 }
 
-.addreess,
+.address,
 .description {
   display: block;
   color: rgba(255, 255, 255, 0.5);
@@ -570,7 +570,7 @@ body {
   line-height: calc(23 / 14 * 100%);
 }
 
-.addreess {
+.address {
   max-width: 160px;
   margin: 0 auto 0;
 }
@@ -588,10 +588,6 @@ body {
 .footer__social-link:not(:first-child) {
   margin-left: 8px;
 }
-/* .footer__social-link:hover,
-.footer__social-link:focus {
-  border-color: rgba(232, 69, 69, 0.8);
-} */
 
 .footer__about {
   flex-basis: 30%;
