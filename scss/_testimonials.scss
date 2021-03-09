@@ -1,0 +1,101 @@
+.testimonials {
+    display: flex;
+
+    @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+
+    &__customers-img {
+        flex: 0 0 50%;
+        position: relative;
+        min-height: 500px;
+    }
+
+    &__customer-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        visibility: hidden;
+
+        &--active {
+            visibility: visible;
+            animation: fadeIn ease 2s;
+        }
+    }
+
+    &__customers-review {
+        width: 100%;
+        padding-top: 115px;
+        background-color: #53354a;
+        position: relative;
+
+        .customers-review-wrapper {
+            position: fixed;
+            margin-left: 85px;
+            z-index: 1;
+
+            &--active {
+                position: relative;
+                animation: fadeIn ease 2s;
+                z-index: 2;
+            }
+        }
+    }
+
+    &__review {
+        display: block;
+        max-width: 430px;
+        font-family: "Cardo", serif;
+        font-size: 36px;
+        font-style: italic;
+        line-height: 42 / 36 * 100%;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: left;
+    }
+
+    &__customer-position {
+        display: block;
+        font-family: "Raleway", serif;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ffffff;
+        margin-top: 25px;
+    }
+
+    &__slider-btns {
+        display: flex;
+        margin: 65px 0 0 85px;
+
+        .slider-btn {
+            display: block;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: 0.2s;
+
+            &:not(:first-child) {
+                margin-left: 10px;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(232, 69, 69, 1);
+            }
+
+            &.active {
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}

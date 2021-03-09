@@ -1,0 +1,95 @@
+.header {
+    background: url("../img/header-bg.jpg") no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(49, 53, 79, 0.95);
+        z-index: -1;
+    }
+
+    &__nav-logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    &__nav {
+        max-width: 600px;
+        flex-grow: 1;
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-item a {
+        font-family: $ff;
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e84545;
+            transform: scale(0);
+            transform-origin: bottom left;
+            transition: 0.2s ease-in;
+            z-index: -1;
+        }
+        &:hover::after,
+        &:focus::after {
+            transform: scale(1);
+            transform-origin: top right;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        padding-bottom: 155px;
+    }
+
+    &__title {
+        max-width: 880px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 70 / 65 * 100%;
+        text-transform: uppercase;
+        margin: 155px auto 0;
+    }
+
+    &__subtitle {
+        max-width: 920px;
+        font-family: $ff;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33 / 22 * 100%;
+        margin: 50px auto 0;
+    }
+
+    &__button {
+        max-width: 200px;
+        margin: 80px auto 0;
+    }
+}
