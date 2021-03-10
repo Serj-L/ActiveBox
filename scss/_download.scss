@@ -1,8 +1,12 @@
 .download {
-    padding: 100px 0;
+    padding: 100px 20px;
     font-family: "Raleway", serif;
     background-color: #ffffff;
     text-align: center;
+
+    @media (max-width: 992px) {
+        padding: 60px 20px;
+    }
 
     &__text {
         font-size: 28px;
@@ -19,5 +23,9 @@
     &__button {
         max-width: 280px;
         margin: 40px auto 0;
+
+        @media (max-width: 344px) {
+            max-width: 200px;
+        }
     }
 }

@@ -7,12 +7,12 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 -10px 0;
-        overflow: auto;
 
         @media (max-width: 605px) {
             flex-wrap: nowrap;
             justify-content: flex-start;
             margin: 0;
+            overflow: auto;
         }
     }
 
@@ -22,21 +22,6 @@
         flex-direction: column;
         font-family: $ff;
         margin: 30px 10px 0;
-
-        @media (max-width: 605px) {
-            flex-basis: 80%;
-            margin: 0;
-        }
-
-        &:not(:first-child) {
-            @media (max-width: 605px) {
-            margin-left: 20px;
-            }
-        }
-
-    }
-    &__avatar img {
-        width: 100%;
     }
 
     &__name {
