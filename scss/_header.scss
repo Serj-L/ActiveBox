@@ -115,11 +115,14 @@
             z-index: -1;
         }
 
-        &:hover::after,
-        &:focus::after {
-            transform: scale(1);
-            transform-origin: top right;
+        @media (min-width: 993px) {
+            &:hover::after,
+            &:focus::after {
+                transform: scale(1);
+                transform-origin: top right;
+            }
         }
+
         @media (max-width: 767px) {
             display: block;
             font-size: 22px;

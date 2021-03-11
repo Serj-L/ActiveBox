@@ -1,15 +1,6 @@
 .testimonials {
     display: flex;
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-
     &__customers-img {
         flex: 0 1 50%;
         position: relative;
@@ -106,9 +97,11 @@
             font-size: 36px;
         }
 
-        &:hover,
-        &:focus {
-            text-decoration: underline;
+        @media (min-width: 993px) {
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -162,12 +155,12 @@
                     margin-left: 16px;
                 }
             }
-
-            &:hover,
-            &:focus {
-                background-color: #e84545;
+            @media (min-width: 993px) {
+                &:hover,
+                &:focus {
+                    background-color: #e84545;
+                }
             }
-
             &.active {
                 background-color: #ffffff;
             }
