@@ -220,6 +220,10 @@
         line-height: 70 / 65 * 100%;
         text-transform: uppercase;
         margin: auto;
+
+        @media (min-width: 1901px) {
+            font-size: 65px;
+        }
     }
 
     &__subtitle {
@@ -232,6 +236,10 @@
 
         @media (max-width: 992px) {
             margin-top: 35px;
+        }
+
+        @media (min-width: 1901px) {
+            font-size: 22px;
         }
     }
 

@@ -481,6 +481,12 @@ body.lock {
   margin: auto;
 }
 
+@media (min-width: 1901px) {
+  .header__title {
+    font-size: 65px;
+  }
+}
+
 .header__subtitle {
   max-width: 920px;
   font-family: "Raleway", sans-serif;
@@ -493,6 +499,12 @@ body.lock {
 @media (max-width: 992px) {
   .header__subtitle {
     margin-top: 35px;
+  }
+}
+
+@media (min-width: 1901px) {
+  .header__subtitle {
+    font-size: 22px;
   }
 }
 
@@ -1052,6 +1064,12 @@ body.lock {
 @media (max-width: 600px) {
   .testimonials__review {
     text-align: center;
+  }
+}
+
+@media (min-width: 1901px) {
+  .testimonials__review {
+    font-size: 36px;
   }
 }
 
