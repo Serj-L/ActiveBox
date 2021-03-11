@@ -1025,7 +1025,7 @@ body.lock {
 .testimonials__customers-review .customers-review-wrapper {
   position: fixed;
   margin-left: 85px;
-  z-index: 1;
+  z-index: -1;
 }
 
 @media (max-width: 850px) {
