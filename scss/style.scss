@@ -112,6 +112,49 @@ body {
     }
 }
 
+.scroll-up-btn {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(43, 46, 74, 0.9);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color 0.2s, opacity 0.5s, visibility 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 10;
+
+        &::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            color: #ffffff;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            cursor: pointer;
+            background-color: rgba(232, 69, 69, 0.9);
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
 @import "_header.scss";
 @import "_features.scss";
 @import "_works.scss";
