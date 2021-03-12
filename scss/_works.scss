@@ -91,9 +91,11 @@
     &__text {
         display: none;
         position: absolute;
+        width: 90%;
         font-family: $ff;
         font-size: 14px;
         color: #ffffff;
+        text-align: center;
         transform: translateX(-50%);
 
         @media (max-width: 992px) {

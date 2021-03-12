@@ -17,8 +17,8 @@
     }
 
     &__item {
-        display: flex;
         flex: 0 0 270px;
+        display: flex;
         flex-direction: column;
         font-family: $ff;
         margin: 30px 10px 0;
@@ -51,7 +51,6 @@
     }
 
     &__info {
-        max-width: 270px;
         font-size: 14px;
         line-height: 21 / 14 * 100%;
         font-weight: 400;
