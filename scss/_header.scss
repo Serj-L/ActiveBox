@@ -104,6 +104,7 @@
         padding: 10px;
         position: relative;
         z-index: 1;
+        transition: opacity 0.2s ease-in;
 
         &::after {
             content: "";
@@ -120,6 +121,10 @@
         }
 
         @media (min-width: 993px) {
+            &:hover, &:focus {
+                opacity: 1;
+            }
+
             &:hover::after,
             &:focus::after {
                 transform: scale(1);
@@ -180,15 +185,18 @@
 
             &.active {
                 border-color: #e84545;
+
                 span {
                     transform: scale(0);
                 }
+
                 &:before {
                     transform: rotate(45deg);
                     left: 3px;
                     top: 12px;
                     background-color: #e84545;
                 }
+
                 &:after {
                     transform: rotate(-45deg);
                     left: 3px;

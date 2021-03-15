@@ -12,13 +12,9 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         margin: 0 -20px 0;
-
-        @media (max-width: 1040px) {
-            justify-content: center;
-        }
 
         @media (max-width: 689px) {
             flex-direction: column;

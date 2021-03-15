@@ -142,12 +142,14 @@
                     margin-left: 16px;
                 }
             }
+
             @media (min-width: 993px) {
                 &:hover,
                 &:focus {
                     background-color: #e84545;
                 }
             }
+
             &.active {
                 background-color: #ffffff;
             }

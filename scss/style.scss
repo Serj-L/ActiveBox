@@ -118,6 +118,7 @@ body {
         transition: 0.2s ease-in;
         z-index: -1;
     }
+
     @media (min-width: 993px) {
         &:hover::after,
         &:focus::after {
@@ -156,6 +157,7 @@ body {
             font-size: 20px;
             color: #ffffff;
         }
+
         @media (min-width: 993px) {
             &:hover,
             &:focus,
