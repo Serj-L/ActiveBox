@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 0 -20px 0;
+        margin: 0 -15px 0;
 
         @media (max-width: 689px) {
             flex-direction: column;
@@ -27,7 +27,7 @@
         font-family: $ff;
         max-width: 310px;
         text-align: center;
-        margin: 80px 20px 0;
+        margin: 80px 15px 0;
 
         @media (max-width: 689px) {
             margin: 50px 0 0;

@@ -298,7 +298,7 @@ body.lock {
 @media (max-width: 767px) {
   .header__nav {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -590,7 +590,7 @@ body.lock {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -20px 0;
+  margin: 0 -15px 0;
 }
 
 @media (max-width: 689px) {
@@ -610,7 +610,7 @@ body.lock {
   font-family: "Raleway", sans-serif;
   max-width: 310px;
   text-align: center;
-  margin: 80px 20px 0;
+  margin: 80px 15px 0;
 }
 
 @media (max-width: 689px) {
